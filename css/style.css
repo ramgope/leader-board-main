@@ -66,9 +66,24 @@ header {
 /* ===============Header section end=============== */
 
 /* ===============Main section started=============== */
-main {
+.common {
     width: 870px;
     background-color: #ffbaba;
+    margin: auto;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+.player img {
+    width: 56px;
 }
 
 /* ===============Main section end=============== */
