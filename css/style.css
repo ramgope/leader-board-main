@@ -72,6 +72,7 @@ header {
     margin: auto;
 }
 
+/* ===============Players section started=============== */
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -86,4 +87,30 @@ header {
     width: 56px;
 }
 
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* ===============Blogs section started=============== */
+.blog {
+    display: flex;
+}
+
+.blog-img img {
+    width: 225px;
+}
+
 /* ===============Main section end=============== */
+
+/* ===============Footer section started=============== */
+.courses {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course img {
+    width: 265px;
+}
+
+/* ===============Footer section end=============== */
