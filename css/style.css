@@ -105,18 +105,18 @@ main {
     width: 56px;
 }
 
-/* ===============Blogs section started=============== */
-.blogs {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
-}
-
 hr {
     width: 805px;
     color: #D1D1D1;
     justify-content: center;
     margin: 0 30px;
+}
+
+/* ===============Blogs section started=============== */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
 }
 
 .blog {
@@ -133,11 +133,11 @@ hr {
 }
 
 .blog-info {
-    margin: 20px 00 20px 20px;
+    margin: 10px;
 }
 
 .blog-info h3 {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
 }
 
@@ -168,7 +168,6 @@ footer {
     padding: 20px 10px;
     margin-bottom: 30px;
     border-radius: 10px;
-    /* box-shadow: 20px 20px 20px rgb(255, 174, 174); */
 }
 
 .course img {
@@ -207,3 +206,92 @@ footer {
 }
 
 /* ===============Footer section end=============== */
+
+/* ===============Responsive section started=============== */
+@media only screen and (max-width: 687px) {
+
+    .navbar,
+    .common {
+        width: 100%;
+    }
+
+    .header-logo {
+        width: 30%;
+    }
+
+    .header-items ul li {
+        padding: 25px 7px;
+    }
+
+    .common h1 {
+        padding: 0px;
+    }
+
+    .players,
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    hr {
+        width: 80%;
+        margin: auto;
+    }
+
+    .blog {
+        flex-direction: column;
+        padding: 20px 0 0 20px;
+    }
+
+    .common-padding {
+        margin-bottom: 0px;
+    }
+
+    .blog-info {
+        margin: 0;
+    }
+
+    .courses {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .header-logo {
+        width: 40%;
+    }
+
+    .header-items ul li {
+        padding: 20px 0;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    hr {
+        width: 80%;
+        margin: auto;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .courses {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+/* ===============Responsive section end=============== */
